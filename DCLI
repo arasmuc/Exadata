@@ -1,0 +1,4 @@
+[oracle@dbnode ~]$ dcli -g $HOME/celllist.txt cellcli -e list cell
+
+[oracle@dbnode ~]$ dcli -g celllist.txt "cat /proc/meminfo | grep Mem"
+
