@@ -2,3 +2,5 @@
 
 [oracle@dbnode ~]$ dcli -g celllist.txt "cat /proc/meminfo | grep Mem"
 
+[oracle@dbnode ~]$ dcli -c cell1,cell2,cell3 -l celladmin vmstat 2 2
+
