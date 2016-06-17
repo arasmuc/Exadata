@@ -1,6 +1,11 @@
+The distributed command-line utility (dcli) is a utility program that is provided with Oracle Exadata Database Machine. 
+Its purpose is to provide a means to simultaneously execute monitoring and administration commands across multiple Cell Servers.
+
 [oracle@dbnode ~]$ dcli -g $HOME/celllist.txt cellcli -e list cell
 
 [oracle@dbnode ~]$ dcli -g celllist.txt "cat /proc/meminfo | grep Mem"
 
 [oracle@dbnode ~]$ dcli -c cell1,cell2,cell3 -l celladmin vmstat 2 2
+
+dcli -g mysells date
 
